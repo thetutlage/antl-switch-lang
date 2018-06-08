@@ -1,8 +1,8 @@
 {
-  "name": "adonis-fullstack-app",
+  "name": "antl-app-demo",
   "version": "4.1.0",
   "adonis-version": "4.1.0",
-  "description": "The fullstack application boilerplate for Adonisjs",
+  "description": "This app shows a demo on how to build a website, which allows switching language from the website header.",
   "main": "index.js",
   "scripts": {
     "start": "node server.js",
