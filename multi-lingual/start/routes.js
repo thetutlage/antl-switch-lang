@@ -23,11 +23,9 @@ Route.get('/', ({ view, antl }) => {
 Route.get('/switch/:lang', ({ params, antl, request, response }) => {
   const locales = antl.availableLocales()
 
-  if (locales.indexOf(params.lang) > -1 ) {
+  if (locales.includes(params.lang)) {
     response.cookie('lang', params.lang, { path: '/' })
-    response.redirect('back')
-  } else {
-    // maybe throw an error, that language is not supported
-    response.redirect('back')
   }
+  
+  response.redirect('back')
 })
